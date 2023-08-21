@@ -39,11 +39,12 @@ function discountBtnClick(){
     const discount = (totalPrice/100)*20;
      remainTotal = discount;
      finalTotal = totalPrice - discount; 
-    document.getElementById("display-discount").innerText = remainTotal;
+    document.getElementById("display-discount").innerText = remainTotal.toFixed(2);
     
 
     total = finalTotal;
     document.getElementById("total").innerText= finalTotal;
+  
 
 
    }
