@@ -27,26 +27,26 @@ function handleDivClick(target){
       purchaseBtn.style.backgroundColor = '#E527B2';
    }
 
-  
-     total = totalPrice;
-     document.getElementById("total").innerText= total;
-
- 
 }
 
-// //   discount = (totalPrice*20)/100;
-// //   total = totalPrice - discount;
-  
-//  // total = totalPrice;
-//    // document.getElementById("total").innerText= total;
 
-
-// function discountBtnClick(){
-//     const couponField = document.getElementById('input-cp');
-//     const couponInput = couponField.value; 
-//     const getCouponCode = couponInput;
+function discountBtnClick(){
+    const couponField = document.getElementById('input-cp');
+    const couponInput = couponField.value; 
+    const getCouponCode = couponInput;
    
-//    }
+
+    const discount = (totalPrice/100)*20;
+     remainTotal = discount;
+     finalTotal = totalPrice - discount; 
+    document.getElementById("display-discount").innerText = remainTotal;
+    
+
+    total = finalTotal;
+    document.getElementById("total").innerText= finalTotal;
+
+
+   }
 
  
-
+   
