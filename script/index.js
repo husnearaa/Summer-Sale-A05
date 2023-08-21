@@ -43,17 +43,26 @@ function discountBtnClick(){
     
 
     total = finalTotal;
-    document.getElementById("total").innerText= finalTotal;
+    document.getElementById("total").innerText= finalTotal.toFixed(2);
 
    }
 
-
-   function showModal(){
-
-    // finalTotal.value = '';
-    // totalPrice.value = '';
-    // remainTotal.value = '';
-
-   }
  
+   function showModal(){
+    // document.getElementById("modal_btn");
+
+   }
+
+   
+
+//    function modalClick(){
+//     // const selectedItemsContainer = document.getElementById("modal_btn")
+    
+//     let getValue= document.getElementById("back-home");
+//       if (getValue.value !=" ") {
+//           getValue.value = " ";
+//       }
+// }
+
+
    
