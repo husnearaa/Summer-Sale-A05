@@ -10,7 +10,9 @@ function handleDivClick(target){
    const price = target.parentNode.childNodes[6].innerText.split(" ")[0];
    totalPrice = parseInt(totalPrice) + parseInt(price);
    document.getElementById("total-price").innerText= totalPrice;
-
+       
+    total = totalPrice;
+    document.getElementById("total").innerText= total;
 
    if(totalPrice >= 200){
       let applyBtn = document.getElementById('apply-btn');
@@ -35,7 +37,7 @@ function discountBtnClick(){
     const couponInput = couponField.value; 
     const getCouponCode = couponInput;
    
-
+    
     const discount = (totalPrice/100)*20;
      remainTotal = discount;
      finalTotal = totalPrice - discount; 
