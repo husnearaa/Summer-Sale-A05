@@ -10,7 +10,7 @@ function handleDivClick(target){
    const price = target.parentNode.childNodes[6].innerText.split(" ")[0];
    totalPrice = parseInt(totalPrice) + parseInt(price);
    document.getElementById("total-price").innerText= totalPrice;
-       
+
     total = totalPrice;
     document.getElementById("total").innerText= total;
 
@@ -49,22 +49,16 @@ function discountBtnClick(){
 
    }
 
- 
-   function showModal(){
-    // document.getElementById("modal_btn");
+
+   function modalClick(){
+    document.getElementById("total-price").innerText = "0.00";
+    document.getElementById('total').innerText = '0.00';
+    document.getElementById('display-discount').innerText = '0.00';
+    document.getElementById("selected-items").innerText = '';   
+    document.getElementById("input-cp").innerText = '';   
 
    }
 
-   
-
-//    function modalClick(){
-//     // const selectedItemsContainer = document.getElementById("modal_btn")
-    
-//     let getValue= document.getElementById("back-home");
-//       if (getValue.value !=" ") {
-//           getValue.value = " ";
-//       }
-// }
 
 
    
