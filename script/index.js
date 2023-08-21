@@ -44,10 +44,16 @@ function discountBtnClick(){
 
     total = finalTotal;
     document.getElementById("total").innerText= finalTotal;
-  
-
 
    }
 
+
+   function showModal(){
+
+    // finalTotal.value = '';
+    // totalPrice.value = '';
+    // remainTotal.value = '';
+
+   }
  
    
